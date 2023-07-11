@@ -1,0 +1,293 @@
+:root{
+   --primary:#ffffff;
+}
+body{
+    margin: 0;
+    background-image: linear-gradient( to right ,rgba(200,220,229,1) ,rgba(182,204,218,1));
+    font-family: 'Poppins';
+}
+
+
+.logo{
+    margin: 0.7rem 0 0 1rem;
+}
+.apple{
+    display: flex;
+    flex-direction: row;
+}
+.empty{
+    flex-grow: 1;
+    max-width: 95vw;
+}
+.search-cart{
+    margin-top: 1.1rem;
+}
+#line{
+    padding-left:10px;
+}
+#cart{
+    padding: 5px;
+    margin-right: 0.7rem;
+}
+
+.heading{
+    font-size: 2.1rem;
+   margin-left: 1.5rem;
+    margin-top: 4rem;
+    color:var(--primary);
+    font-weight: 400;
+    margin-bottom: 0;
+    max-width: 400px;
+}
+.heading::first-line{
+    font-weight: 700;
+}
+aside{
+    justify-content: end;
+  
+    background-color: #ffffff;
+}
+.button{
+    margin-left: 1.2rem;
+}
+.buynow{
+    max-width: 200px;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: 4px solid var(--primary);
+    color: var(--primary);
+    border-radius: 100px;
+}
+.img{
+    margin: auto auto;
+    display: flex;
+    margin-top: 4rem;
+}
+.watch{
+    width: 24rem;
+    height: 20rem;
+    margin: auto auto;
+    margin-right: 2rem;
+    
+}
+.colorindicator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+.black{
+margin-top: 4rem;
+width: 16px;
+height: 16px;
+border: 2px solid var(--primary);
+background-color: black;
+border-radius: 50%;
+}
+.background{
+    width: 22px;
+    height: 22px;
+    background-color: rgb(190, 233, 253);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-top: 4px;
+    
+}
+.dot{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-top: 2px;
+}
+.green{
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: rgb(91, 248, 196);
+}
+.peach{
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    background-color: rgba(242, 206, 198,1);
+    margin-top: 5px;
+}
+/* .empty2{
+    flex-grow: 1;
+    max-width: 200px;
+} */
+
+.footer{
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--primary);
+    border-radius:20px ;
+    display: flex;
+}
+.menu{
+    margin-left: 3rem;
+   
+}
+#menu{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.empty3{
+    flex-grow: 1;
+}
+@media screen and (min-width:768px) {
+    .apple{
+        margin:1rem 1rem 0 1rem ;
+    }
+   .container{
+    width: 100vw;
+    margin-left: 1.3rem;
+    display: grid;
+    grid-template-columns: 51% 49%;
+   }
+   .main-heading{
+    margin: 0;
+    
+    max-width: 100%;
+   }
+   .heading{
+    margin-left: 0;
+    max-width: 480px;
+    font-size: 2.4rem;
+   }
+   .watch{
+    margin: 0;
+    max-width: 330px;
+   }
+   .buynow{
+    max-width: 220px;
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    top: -20vh;
+    left: 0vw;
+    
+   }
+   
+   .colorindicator{
+    margin-right: 0;
+   }
+   .sample{
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    margin: 5rem 1rem 0 0;
+    align-items: baseline;
+    
+   }
+   .grey{
+    width: 131px;
+    height: 80px;
+    border-radius: 20px;
+background: rgba(67, 69, 88, 0.60);
+margin-left: 10px;
+display: flex;
+
+
+}
+.sea{
+    
+        width: 131px;
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 10px;
+        background: rgba(106, 221, 204, 0.60);
+        display: flex;
+       }
+       .pink{
+        width: 131px;
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 10px;
+background: rgba(249, 205, 196, 0.60);
+display: flex;
+       }
+       .smallwatch{
+        margin: auto auto;
+        position: relative;
+top: -2rem;
+       }
+}
+
+@media screen and (min-width:1024px) {
+    .main-heading{
+        max-width: 750px;
+
+    }
+    .heading{
+        font-size: 4rem;
+        max-width: 100%;
+        
+        height: min-content;
+    }
+    .container{
+        grid-template-columns: 62% 38%;
+
+    }
+    .heading{
+        max-width: 680px;
+    }
+    .buynow{
+        top: -2rem;
+    }
+    .sample{
+        height: fit-content;
+        
+    }
+}
+@media screen and (min-width:1350px) {
+    .apple{
+        margin: 1rem 2rem 0 2rem;
+    }
+    .main-heading{
+        max-width: 1100px;
+    }
+    .container{
+        grid-template-columns: 62% 38%;
+    }
+    .heading{
+        max-width: 100%;
+        font-size: 5rem;
+    }
+    .watch{
+        width: 120%;
+        max-width: 500px;
+    }
+   
+    
+}
+@media screen and (min-width:1500px) {
+    .container{
+        margin-left: 5rem;
+        grid-template-columns: 60% 40%;
+    }
+    .watch{
+           width: 500px;
+           height: 350px;
+        
+        
+    }
+    .heading{
+        font-size: 5.5rem;
+    }
+    .sample{
+        margin-top: 12vw;
+    }
+   
+}
