@@ -16,7 +16,7 @@ body
     border-radius: 30px;
     flex-direction: column;
     background-image: linear-gradient( to right ,rgba(200,220,229,1) ,rgba(182,204,218,1));
-    height: 95vh;
+    height: fit-content;
 }
 .logo{
     margin: 0.4rem 0 0 1rem;
@@ -58,7 +58,7 @@ body
 .buynow{
     max-width: 200px;
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
     font-weight: 400;
@@ -156,7 +156,7 @@ border-radius: 50%;
     max-width: 90vw;
 
 }
-.sample{
+    .sample{
     height: fit-content;
     display: flex;
     justify-content: end;
@@ -168,13 +168,13 @@ border-radius: 50%;
     width: 150px;
     height: 80px;
     border-radius: 20px;
-background:rgb(67, 69, 88);
-margin-left: 10px;
-display: flex;
+    background:rgb(67, 69, 88);
+    margin-left: 10px;
+    display: flex;
 
 
-}
-.sea{
+    }   
+    .sea{
     
         width: 150px;
         height: 80px;
@@ -206,13 +206,13 @@ top: -2rem;
         font-size: 1.2rem;
         grid-column: 1;
         grid-row: 3;
-        margin-top: 5rem;
+        margin-top: 0;
         
        }
        .footer{
-   position: absolute;
-   top: 95vh;
-   width: 100vw;
+        position: absolute;
+        top: 100;
+        width: 100vw;
         height: fit-content;
         background-color: var(--primary);
         border-radius:10px ;
@@ -246,9 +246,7 @@ top: -2rem;
     max-width: 220px;
     grid-column: 1;
     grid-row: 2;
-    position: relative;
-    top: -20vh;
-    left: 0vw;
+   
     
    }
    
@@ -294,10 +292,7 @@ top: -2rem;
         height: fit-content;
         
     }
-    footer{
-        order: -1;
-      
-    }
+   
     .sample{
         margin-top: 0;
     }
