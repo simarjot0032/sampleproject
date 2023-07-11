@@ -75,14 +75,14 @@ body
     width: 24rem;
     height: 20rem;
     margin: auto auto;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     
 }
 .colorindicator{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
 .black{
 margin-top: 4rem;
