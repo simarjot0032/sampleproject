@@ -3,13 +3,20 @@
 }
 body{
     margin: 0;
-    background-image: linear-gradient( to right ,rgba(200,220,229,1) ,rgba(182,204,218,1));
+   
     font-family: 'Poppins';
 }
 
-
+.full{
+    margin-top: 0;
+    position: relative;
+    top: -1vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( to right ,rgba(200,220,229,1) ,rgba(182,204,218,1));
+}
 .logo{
-    margin: 0.7rem 0 0 1rem;
+    margin: 0.4rem 0 0 1rem;
 }
 .apple{
     display: flex;
@@ -42,16 +49,12 @@ body{
 .heading::first-line{
     font-weight: 700;
 }
-aside{
-    justify-content: end;
-  
-    background-color: #ffffff;
-}
 .button{
     margin-left: 1.2rem;
 }
 .buynow{
     max-width: 200px;
+    margin-left: 1rem;
     margin-top: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
@@ -128,23 +131,33 @@ border-radius: 50%;
 } */
 
 .footer{
-    width: 100vw;
-    height: 9vh;
+   
+    height: fit-content;
     background-color: var(--primary);
-    border-radius:20px ;
+    border-radius:10px ;
     display: flex;
 }
 .menu{
-    margin-left: 3rem;
+    margin-left: 2rem;
    
 }
 #menu{
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+#facebook-ico,#twitter-ico,#linkedin-ico{
+    margin-top: 1rem;
     margin-right: 1rem;
+}
+#facebook-ico{
+    margin-left: 0.5rem
 }
 .empty3{
     flex-grow: 1;
+
+    max-width: 90vw;
+
 }
 .sample{
     height: fit-content;
@@ -231,38 +244,10 @@ top: -2rem;
     align-items: baseline;
     
    }
-   .grey{
-    width: 131px;
-    height: 80px;
-    border-radius: 20px;
-background: rgba(67, 69, 88, 0.60);
-margin-left: 10px;
-display: flex;
+   
 
 
-}
-.sea{
-    
-        width: 131px;
-        height: 80px;
-        border-radius: 20px;
-        margin-left: 10px;
-        background: rgba(106, 221, 204, 0.60);
-        display: flex;
-       }
-       .pink{
-        width: 131px;
-        height: 80px;
-        border-radius: 20px;
-        margin-left: 10px;
-background: rgba(249, 205, 196, 0.60);
-display: flex;
-       }
-       .smallwatch{
-        margin: auto auto;
-        position: relative;
-top: -2rem;
-       }
+
 }
 
 @media screen and (min-width:1024px) {
@@ -289,6 +274,10 @@ top: -2rem;
     .sample{
         height: fit-content;
         
+    }
+    footer{
+        order: -1;
+      
     }
 }
 @media screen and (min-width:1350px) {
@@ -323,11 +312,22 @@ top: -2rem;
         
         
     }
+    .img{
+        margin-right: 40%;
+    }
+    .buynow{
+        margin-top: 2rem;
+    }
     .heading{
         font-size: 5.5rem;
     }
     .sample{
         margin-top: 12vw;
+    }
+    footer{
+
+        position: relative;
+        
     }
    
 }
