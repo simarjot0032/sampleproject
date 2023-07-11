@@ -1,7 +1,8 @@
 :root{
    --primary:#ffffff;
 }
-body{
+body
+{
     margin: 0;
    
     font-family: 'Poppins';
