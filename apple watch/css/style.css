@@ -9,6 +9,7 @@ body
 }
 
 .full{
+    width: 100vw;
     margin-top: 0;
     position: relative;
     top: -1vh;
@@ -236,7 +237,7 @@ top: -2rem;
    .heading{
     margin-left: 0;
     max-width: 480px;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
    }
    .watch{
     margin: 0;
@@ -273,17 +274,18 @@ top: -2rem;
 
     }
     .heading{
-        font-size: 4rem;
+        font-size: 3.5rem;
         max-width: 100%;
-        
+        margin-top: 2rem;
         height: min-content;
     }
     .container{
-        grid-template-columns: 62% 38%;
+        grid-template-columns: 59% 38%;
 
     }
     .heading{
         max-width: 680px;
+        
     }
     .buynow{
         top: -2rem;
@@ -291,6 +293,9 @@ top: -2rem;
     .sample{
         height: fit-content;
         
+    }
+    .img{
+        margin-top: 1.2rem;
     }
    
     .sample{
@@ -305,6 +310,7 @@ top: -2rem;
         max-width: 1100px;
     }
     .container{
+
         grid-template-columns: 62% 38%;
     }
     .heading{
