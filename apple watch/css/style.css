@@ -129,7 +129,7 @@ border-radius: 50%;
 
 .footer{
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
     background-color: var(--primary);
     border-radius:20px ;
     display: flex;
@@ -146,6 +146,46 @@ border-radius: 50%;
 .empty3{
     flex-grow: 1;
 }
+.sample{
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    margin: 5rem 1rem 0 0;
+    align-items: baseline;
+    
+   }
+   .grey{
+    width: 131px;
+    height: 80px;
+    border-radius: 20px;
+background: rgba(67, 69, 88, 0.60);
+margin-left: 10px;
+display: flex;
+
+
+}
+.sea{
+    
+        width: 131px;
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 10px;
+        background: rgba(106, 221, 204, 0.60);
+        display: flex;
+       }
+       .pink{
+        width: 131px;
+        height: 80px;
+        border-radius: 20px;
+        margin-left: 10px;
+background: rgba(249, 205, 196, 0.60);
+display: flex;
+       }
+       .smallwatch{
+        margin: auto auto;
+        position: relative;
+top: -2rem;
+       }
 @media screen and (min-width:768px) {
     .apple{
         margin:1rem 1rem 0 1rem ;
