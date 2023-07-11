@@ -58,7 +58,7 @@ body
 }
 .buynow{
     max-width: 200px;
-    margin-left: 1rem;
+    margin-left: rem;
     margin-top: 0rem;
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
@@ -116,7 +116,7 @@ border-radius: 50%;
 .green{
     width: 16px;
     height: 16px;
-    border: px solid var(--primary);
+    border: 2px solid var(--primary);
     border-radius: 50%;
     margin-top: 5px;
     background-color: rgb(91, 248, 196);
@@ -189,13 +189,13 @@ border-radius: 50%;
         height: 80px;
         border-radius: 20px;
         margin-left: 15px;
-background: rgb(249, 205, 196);
-display: flex;
+        background: rgb(249, 205, 196);
+        display: flex;
        }
        .smallwatch{
         margin: auto auto;
         position: relative;
-top: -2rem;
+        top: -2rem;
        }
        .grey:hover,.sea:hover,.pink:hover{
         transition: ease;
@@ -207,7 +207,8 @@ top: -2rem;
         font-size: 1.2rem;
         grid-column: 1;
         grid-row: 3;
-        margin-top: 0;
+        margin-top: 0.2rem;
+        margin-left: 1rem;
         
        }
        .footer{
