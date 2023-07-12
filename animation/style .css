@@ -9,8 +9,8 @@
     gap:150px;
 }
 .child{
-    width: 180px;
-    height: 190px;
+    width: 10vw;
+    height: 20vh;
     background-color: aquamarine;
     border-radius: 20px;
     box-shadow:  0 0 20px;
@@ -28,7 +28,7 @@
 @keyframes ro{
     
     70%{
-        margin-top:27.5rem;
+        margin-top:25vw;
         transform:rotate(220deg);
         border-radius: 100px 0 0 0;
         
@@ -55,8 +55,8 @@
     height: 2rem;
     background-color: black;
     border-radius: 15px;
-    position: absolute;
-    top:85vh;
+position: fixed;
+    margin-top:72vh;
     animation-name:wi;
     animation-fill-mode: forwards;
     animation-duration: 2s;
