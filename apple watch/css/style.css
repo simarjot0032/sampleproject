@@ -454,16 +454,20 @@ body
         top: -1vh;
     }
     .heading{
-        font-size: 5.5rem;
+        font-size: 5.2rem;
     }
+
     .sample{
         position: relative;
         top: -5vh;
     }
     
     .sample{
-        margin-top: 0;
+        position: relative;
+        top:-10vw;
+
     }
+    
     .indicator{
         position: relative;
         top: 8vh;
