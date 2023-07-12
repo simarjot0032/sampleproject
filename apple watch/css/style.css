@@ -242,11 +242,13 @@ body
         margin: auto auto;
         width: 95vw;
     }
+
    .container{
+
     width: 100vw;
-    margin-left: 1.2rem;
+    margin-left: 1rem;
     display: grid;
-    grid-template-columns: 50% 48%;
+    grid-template-columns: 52% 48%;
    }
    .main-heading{
     margin: 0;
@@ -258,14 +260,14 @@ body
     margin-top: 1rem;
     margin-left: 1rem;
     max-width: 500px;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
    }
    .img{
     margin-top: 1rem;
    }
    .img{
-    margin-left: 1rem;
+    margin-left: 0.5rem;
    }
    .watch{
     /* margin-top: -2rem; */
@@ -282,7 +284,10 @@ body
     margin-top: 0;
    
    }
-   
+   .indicator{
+    position: relative;
+    top:20vh;
+   }
    .colorindicator{
     margin-right: 0;
    }
@@ -346,6 +351,10 @@ body
         grid-template-columns: 59% 38%;
 
     }
+    .indicator{
+        position: relative;
+        top:10vh;
+    }
     .heading{
         max-width: 680px;
         
@@ -354,6 +363,7 @@ body
         top: -2rem;
     }
     .sample{
+        
         height: fit-content;
         
     }
@@ -363,6 +373,9 @@ body
    
     .sample{
         margin-top: 0;
+    }
+    .grey.sea,.pink{
+        margin-top: 5vh;
     }
 }
 
@@ -384,12 +397,16 @@ body
         font-size: 4rem;
     }
     .watch{
-        
+        margin-left: 5vw;
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
+    }
+    .indicator{
+        position: relative;
+        top: 15vh;
     }
     .sample{
-        margin-top: 0;
+        margin-top: 5vh;
         margin-right: 5vw;
     }
     .buynow{
@@ -440,7 +457,8 @@ body
         font-size: 5.5rem;
     }
     .sample{
-        margin-top: 5vw;
+        position: relative;
+        top: -5vh;
     }
     
     .sample{
