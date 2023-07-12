@@ -81,15 +81,15 @@ body
     width: auto;
     height: 20rem;
     margin: auto auto;
-    margin-right: 1rem;
+    margin-right: 0.1rem;
    filter: drop-shadow(0 1rem 4px grey);
-   margin-top: 2vh;
+   /* margin-top: 2vh; */
 }
 .colorindicator{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2.5rem;
+    margin-right: 4rem;
 }
     .black{
     margin-top: 4rem;
@@ -219,7 +219,7 @@ body
        }
       
        footer{
-        /* margin-top: 4rem; */
+        /* margin-top: 10vh; */
         width: 100vw;
         height: fit-content;
         background-color: var(--primary);
@@ -299,7 +299,7 @@ body
     position: absolute;
     top: 0;
     margin: 0;
-    left: 0;
+    left: -2.2%;
    }
    .menu{
     margin-top: 1rem;
