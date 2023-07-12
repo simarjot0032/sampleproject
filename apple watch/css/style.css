@@ -454,17 +454,23 @@ body
         top: -1vh;
     }
     .heading{
-        font-size: 5.2rem;
+        font-size: 5.5rem;
+        margin-top: 0;
     }
 
     .sample{
         position: relative;
-        top: -5vh;
+        /* top: vh; */
+    }
+    .main-heading{
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 400px ;
     }
     
     .sample{
-        position: relative;
-        top:-10vw;
+        /* position: relative;
+        top:-10vw; */
 
     }
     
