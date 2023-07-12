@@ -401,7 +401,9 @@ body
 
 }
 
-/* properties for wider screen */
+/* properties for wider screen and some tv screens */
+
+
 @media screen and (min-width:1500px) {
     .container{
         margin-left: 5vw;
