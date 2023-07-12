@@ -381,7 +381,7 @@ body
 }
 @media screen and (min-width:1500px) {
     .container{
-        margin-left: 7vw;
+        margin-left: 5vw;
         grid-template-columns: 58% 40%;
     }
     .search-cart{
@@ -411,7 +411,7 @@ body
         top: -1vh;
     }
     .heading{
-        font-size: 5.2rem;
+        font-size: 5.5rem;
     }
     .sample{
         margin-top: 5vw;
