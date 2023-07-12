@@ -65,11 +65,11 @@ position: fixed;
     animation-iteration-count: infinite;
 }
 @keyframes wi {
-   69%{
+    50%{
     width: 419px;
    }
     70%{
-        width: 100px;
+        width: 150px;
     }
     100%{
         width: 419px;
