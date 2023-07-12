@@ -9,8 +9,8 @@
     gap:150px;
 }
 .child{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 190px;
     background-color: aquamarine;
     border-radius: 20px;
     box-shadow:  0 0 20px;
@@ -22,52 +22,56 @@
     /* position: relative; */
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    /* transition:linear; */
+    transition:ease-in-out;
+    /* z-index: 21; */
 }
 @keyframes ro{
     
     70%{
-        margin-top:40vh ;
-        transform:rotate(250deg);
+        margin-top:27.5rem;
+        transform:rotate(220deg);
         border-radius: 100px 0 0 0;
         
        
     }
-    80%{
+    /* 80%{
         margin-top:1vh; 
-    } /*
-   70%{ 
+    }  */
+   /* 70%{ 
     margin-top: 5vh;
 }
 80%{
     margin-top: 20vh;
-} */
+}  */
 100%{
-        margin-top: 0vh;
+        margin-top: -1vw;
+        border-radius: 0 0 0 0;
         transform:  rotate(360deg);
     }
 }
 .line{
     display: block;
-    width: 220px;
-    height: 10px;
+    width: 420px;
+    height: 2rem;
     background-color: black;
     border-radius: 15px;
-    position: fixed;
-    margin-top: 63vh;
+    position: absolute;
+    top:85vh;
     animation-name:wi;
+    animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 1s;
+    /* animation-direction: alternate; */
     animation-iteration-count: infinite;
 }
 @keyframes wi {
-   68%{
-    width: 219px;
+   69%{
+    width: 419px;
    }
-    69%{
-        width: 70px;
+    70%{
+        width: 100px;
     }
     100%{
-        width: 220px;
+        width: 419px;
     }
 }
