@@ -458,20 +458,13 @@ body
         margin-top: 0;
     }
 
-    .sample{
-        position: relative;
-        /* top: vh; */
-    }
     .main-heading{
         margin-top: 0;
         margin-bottom: 0;
         height: 400px ;
     }
-    
-    .sample{
-        /* position: relative;
-        top:-10vw; */
-
+    .grey,.sea,.pink{
+        margin-top: 5vw;
     }
     
     .indicator{
