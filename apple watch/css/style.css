@@ -83,7 +83,7 @@ body
     margin: auto auto;
     margin-right: 1rem;
    filter: drop-shadow(0 1rem 4px grey);
-   margin-top: 4vh;
+   margin-top: 2vh;
 }
 .colorindicator{
     display: flex;
