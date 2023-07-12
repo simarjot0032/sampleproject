@@ -1,13 +1,18 @@
+/* var declarition  */
+
 :root{
    --primary:#ffffff;
 }
+
+/* body propeerties */
 body
 {
     margin: 0;
     background: linear-gradient(315deg, #C8DCE5 0%, #B6CCDA 100%);
     font-family: 'Poppins';
 }
-
+ 
+/* div propertiex */
 .full{
     width: 100vw;
     margin-top: 0;
@@ -226,6 +231,9 @@ body
         border-radius:10px ;
        display: flex;
     }
+
+
+    /*  properties for tablet */
 @media screen and (min-width:768px) {
     .apple{
         margin:1rem 1rem 0 1rem ;
@@ -307,6 +315,9 @@ body
    }
 }
 
+
+/* properties for laptop */
+
 @media screen and (min-width:1024px) {
     body{
         /* width: 90vw;
@@ -354,6 +365,9 @@ body
         margin-top: 0;
     }
 }
+
+
+/* properties for laptop  */
 @media screen and (min-width:1350px) {
     .apple{
         margin: 1rem 2rem 0 2rem;
@@ -384,7 +398,10 @@ body
     }
    
     
+
 }
+
+/* properties for wider screen */
 @media screen and (min-width:1500px) {
     .container{
         margin-left: 5vw;
