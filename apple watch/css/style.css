@@ -29,11 +29,12 @@ body
 }
 .empty{
     flex-grow: 1;
-    max-width: 95vw;
+    max-width: 90vw;
 }
 .search-cart{
     
     margin-top: 1.1rem;
+    
 }
 .search,.line,.cart{
     margin: auto auto;
@@ -41,7 +42,7 @@ body
     margin-left: 0.5rem;
 }
 .cart{
-    margin-right: 0.5rem;
+    margin-right: 1.2rem;
 }
 
 .heading{
