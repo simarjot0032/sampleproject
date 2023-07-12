@@ -83,6 +83,7 @@ body
     margin: auto auto;
     margin-right: 1rem;
    filter: drop-shadow(0 1rem 4px grey);
+   margin-top: 4vh;
 }
 .colorindicator{
     display: flex;
@@ -429,6 +430,9 @@ body
     .indicator{
         position: relative;
         top: 8vh;
+    }
+    #facebook-ico,#twitter-ico,#linkedin-ico{
+        margin-right: auto; 
     }
    
 }
