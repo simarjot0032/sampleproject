@@ -1,38 +1,43 @@
 .parent{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(59, 59, 240), rgb(128, 34, 128));
+    background-image: linear-gradient(to right, rgb(164, 164, 242), rgb(188, 113, 188));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap:150px;
 }
+*{
+    overflow: hidden;
+}
 .child{
-    width: 10vw;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
     background-color: aquamarine;
-    border-radius: 20px;
-    box-shadow:  0 0 20px;
+    /* border-radius: 20px; */
+    box-shadow:  0 0 2px;
     display: block;
     animation-name:ro;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     transition-property:all ;
     animation-fill-mode:forwards;
     /* position: relative; */
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transition:ease-in-out;
-    /* z-index: 21; */
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    transition:linear;
+    z-index: 21;
+    /* margin: auto auto; */
 }
 @keyframes ro{
     
     70%{
-        margin-top:25vw;
-        transform:rotate(220deg);
-        border-radius: 100px 0 0 0;
-        
-       
+        margin-top: 500px;
+        transform:rotate(250deg);
+
+    }
+    80%{
+        border-radius: 90px 0 0 0;
     }
     /* 80%{
         margin-top:1vh; 
@@ -44,7 +49,7 @@
     margin-top: 20vh;
 }  */
 100%{
-        margin-top: -1vw;
+       margin-top: 0;
         border-radius: 0 0 0 0;
         transform:  rotate(360deg);
     }
@@ -55,25 +60,25 @@
     height: 2rem;
     background-color: black;
     border-radius: 15px;
-position: fixed;
-    margin-top:72vh;
+    margin-top: 800px;
+ position: fixed;
+    margin-bottom: 10vh;
     animation-name:wi;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    /* animation-direction: alternate; */
-    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    transition:  linear;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
 }
 @keyframes wi {
-    50%{
-    width: 419px;
-   }
-   70%{
+    45%{
+        width: 419px;
+    }
+   64%{
     width: 200px;
    }
-    75%{
-        width: 200px;
-    }
+   
     100%{
         width: 419px;
     }
