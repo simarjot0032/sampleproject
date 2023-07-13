@@ -430,7 +430,7 @@ background: rgba(249, 205, 196, 0.60);
    }
    footer{
     width: 55px;
-    height: 99vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: absolute;
