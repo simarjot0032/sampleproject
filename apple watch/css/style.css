@@ -318,19 +318,22 @@ background: rgba(249, 205, 196, 0.60);
         height: 100vh;
     }
     .nav{
-       visibility: visible;
+       /* visibility: visible; */
+       display: inline;
        gap: 5rem;
         color:white;
     }
     .un{
         display: flex;
-        gap:4rem;
+        gap:50px;
         width: 63vw;
     }
     .listitems{
         /* display: inline; */
         flex-grow: 1.5;
         list-style-type: none;
+        text-align: center;
+        font-size: 1.5rem;
         
     
     }
@@ -425,7 +428,7 @@ background: rgba(249, 205, 196, 0.60);
     margin-left: 20px;
    }
    footer{
-    width: 50px;
+    width: 55px;
     height: 99vh;
     display: flex;
     flex-direction: column;
@@ -436,6 +439,9 @@ background: rgba(249, 205, 196, 0.60);
    }
    #menu,#facebook-ico,#twitter-ico,#linkedin-ico{
     margin-left: 0.5rem;
+   }
+   #menu{
+    margin-left: 0;
    }
    #facebook-ico{
     margin-left: 0.8rem;
@@ -488,7 +494,7 @@ background: rgba(249, 205, 196, 0.60);
 
     }
     .indicator{
-        top:50px;
+        top:55px;
     }
     .heading.line2{
      position: relative;
@@ -503,10 +509,9 @@ background: rgba(249, 205, 196, 0.60);
    
     .sample{
         position: relative;
-        bottom:52px;
-        align-items: flex-end;
-        height: fit-content;
-        
+        top: 5px;
+        align-items: center;
+        bottom:70px;
     }
     .img{
         margin-top: 2.2rem;
@@ -531,11 +536,11 @@ background: rgba(249, 205, 196, 0.60);
     }
     .container{
 
-        grid-template-columns: 50% 38%;
+        grid-template-columns: 50% 50%;
     }
     .heading.line2{
         max-width: 100%;
-        margin-left: 1rem;
+        margin-left: 1.4rem;
         font-size: 4rem;
     }
     .watch{
@@ -545,12 +550,12 @@ background: rgba(249, 205, 196, 0.60);
     }
     .indicator{
         position: relative;
-        top: 15vh;
+        top: 70px;
     }
     .sample{
         /* margin-top: 5vh;
         margin-right: 5vw; */
-        bottom: 100px;
+        bottom: 70px;
     }
     .buynow{
         width: 250px;
@@ -566,18 +571,22 @@ background: rgba(249, 205, 196, 0.60);
 
 @media screen and (min-width:1500px) {
     .container{
-        margin-left: 5vw;
-        grid-template-columns: 58% 40%;
+       position: relative;
+       top: 0.5rem;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 1rem;
     }
     .search-cart{
-        margin-right: 5rem;
+        align-items: center;
+        margin-left: 4rem;
+        margin-right: 2rem;
     }
-    .logo{
+    /* .logo{
         margin-left:5vw ;
-    }
+    } */
     .watch{
-           width: 500px;
-           height: 350px;
+           /* width: 500px;
+           height: 350px; */
         margin-left: 2vw;
         
     }
@@ -590,29 +599,34 @@ background: rgba(249, 205, 196, 0.60);
         box-sizing: content-box;
     }
     .img{
-        margin-right: 40%;
+        /* margin-right: 40%; */
     }
-    .buynow{
+    /* .buynow{
         position: relative;
         top: -1vh;
-    }
+    } */
     .heading{
-        font-size: 5.5rem;
+        font-size: 4rem;
         margin-top: 0;
     }
 
-    .main-heading{
+    /* .main-heading{
         margin-top: 0;
         margin-bottom: 0;
         height: 400px ;
+    } */
+    /* .grey,.sea,.pink{
+        position: relative;
+        bottom: 2px;
+    } */
+    .sample{
+        position: relative;
+        right: 50px;
+        bottom: 4px;
     }
-    .grey,.sea,.pink{
-        margin-top: 5vw;
-    }
-    
     .indicator{
         position: relative;
-        top: 8vh;
+        top: 85px;
     }
     #facebook-ico,#twitter-ico,#linkedin-ico{
         margin-right: auto; 
