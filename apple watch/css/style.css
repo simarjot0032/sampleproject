@@ -532,9 +532,16 @@ background: rgba(249, 205, 196, 0.60);
     /* .apple{
         margin: 1rem 2rem 0 2rem;
     } */
+    .full{
+        border-radius:2rem;
+    }
     .main-heading{
         max-width: 1100px;
     }
+    .search-cart{
+        position: relative;
+        left:10rem;
+        }
     .container{
 
         grid-template-columns: 50% 50%;
@@ -562,6 +569,15 @@ background: rgba(249, 205, 196, 0.60);
         width: 250px;
         box-sizing: content-box;
     }
+    footer{
+        width: 80px;
+        align-items: center;
+    }
+    #menu{
+        width: 30px;
+height: 20px;
+flex-shrink: 0;
+    }
    
     
 
@@ -578,10 +594,10 @@ background: rgba(249, 205, 196, 0.60);
         margin-bottom: 1rem;
     }
     .search-cart{
-        align-items: center;
-        margin-left: 4rem;
-        margin-right: 2rem;
-    }
+        position: relative;
+        right: 1px;
+        left: 10rem;
+        }
     /* .logo{
         margin-left:5vw ;
     } */
