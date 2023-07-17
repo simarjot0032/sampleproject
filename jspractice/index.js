@@ -292,5 +292,4 @@ function Circle(){
 }
 const circe=new Circle();
 circe.dra();
-
 circe.constructor
