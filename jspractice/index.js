@@ -136,3 +136,161 @@ function check(limit){
         }
     }
 }
+//exercise
+let array=[undefined,'a','','lll'];
+let falssy=0;
+count(array);
+function count(array){
+    for(let key of array){
+        if(key===undefined||key===null||key===false||key===0||key===NaN||key===''){falssy=falssy+1;}
+       
+        }
+        console.log(falssy);
+    
+}
+ if(array===null){falssy=falssy+1;}
+if(array===false){falssy=falssy+1;}
+
+if(array===0){falssy=falssy+1;}
+if(array===NaN){
+    falssy=falssy+1;
+
+}
+else{
+        falssy=falssy+1-1;
+    }
+
+
+
+
+// exercise
+let ob={
+    title:'hello',
+    title2:"world",
+    age:2
+
+};
+show(ob)
+function show(object){
+    for(let obj in object){
+        if(typeof object[obj]==="string"){
+            console.log(obj,object[obj]);
+        }
+    }
+}
+
+
+
+
+// exercise
+let limit=10;
+multiple(limit);
+
+function multiple(lim){
+    let sum2=0;
+let sum1=0;
+let sum3;
+    for(let i =0;i<=10;i++){
+        if (i%3===0){
+            
+            sum1+=i;
+        }
+        if(i%5===0){
+           
+             sum2+=i;
+        }
+         sum3=sum1+sum2;
+
+    }
+    console.log(sum3);
+}
+
+
+
+// exercise
+let marks=[50,50,50,50,50];
+calculategrade(marks);
+function calculategrade(marks){
+    let sum_of_index_array=0;
+    let avegrage;
+
+    for(let inde of marks){
+        sum_of_index_array=sum_of_index_array+inde;
+
+    }
+     avegrage= sum_of_index_array / marks.length
+
+     if(avegrage>=1 && avegrage<=59){
+        console.log("F");
+     }
+     else if(avegrage>=60 && avegrage<=69){
+        console.log("D");
+     }
+     else if(avegrage>=70 && avegrage<=79){
+        console.log("C");
+     }
+     else if(avegrage>=80 && avegrage<=89){
+        console.log("B");
+     }
+     else if(avegrage>=90 && avegrage<=100){
+        console.log("A");
+     }
+}
+
+
+// stars
+let rows=5;
+showsharts(rows);
+function showsharts(rows){
+    for(let i=0;i<rows;i++){
+        let pattren='';
+        for(let j=0;j<=i;j++){
+            // console.log(i);
+                pattren+='*';
+            }
+            console.log(pattren);
+        
+    }
+}
+// objects
+
+const obje={
+    radius:1,
+    location:{
+        x:1,
+        y:2
+    },
+    isvisible:true,
+    draw:function(){
+        console.log("hello");
+    }
+
+}
+obje.draw();
+
+
+
+//factory function
+function createcircle(){
+    const create={
+       v:"variable",
+        draw(){
+            console.log("hello");
+        }
+    };
+    return create;
+}
+let circle=createcircle();
+circle.draw();
+
+//constructor function
+function Circle(){
+    this.radius=1;
+    this.dra=function(){
+        console.log("hello");
+    }
+}
+const circe=new Circle();
+circe.dra();
+
+circe.constructor
