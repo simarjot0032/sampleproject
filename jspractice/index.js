@@ -244,6 +244,7 @@ showsharts(rows);
 function showsharts(rows){
     for(let i=0;i<rows;i++){
         let pattren='';
+        
         for(let j=0;j<=i;j++){
             // console.log(i);
                 pattren+='*';
@@ -292,4 +293,197 @@ function Circle(){
 }
 const circe=new Circle();
 circe.dra();
-circe.constructor
+circe.constructor;
+
+//how js engine understand a function
+const circle_1 =new Function(` this.radius=1;
+this.dra=function(){
+    console.log("function is also an object");
+}`)
+const circle_obj = new circle_1();
+circle_obj.dra();
+
+
+// primitive vs referance
+let x=10;
+let y=x;
+x=20;
+x=
+{
+    value:10
+};
+y=x;
+x.value=20;
+
+// using function
+let new_number=20;
+function point(new_number)
+{
+    new_number++;
+}
+console.log("before using referance datatypes",new_number);
+new_number=
+
+{
+    value:20
+};
+function point(new_number)
+{
+    new_number.value++;
+}
+point(new_number)
+console.log("after using referance datatpes",new_number['value']);
+
+
+
+//for-of loop being used in objects
+const object_name=
+
+{
+
+    radius:2,
+    draw:function()
+    {
+        console.log("hello");
+    }
+};
+
+// loging properties names
+for(let prop of Object.keys(object_name))
+{
+    console.log(prop);
+}
+
+// loging values of properties
+for(let prop of Object.entries(object_name))
+{
+    console.log(prop);
+}
+
+// in operator
+if('radiuss' in object_name)
+{
+    console.log("yes present");
+}
+else
+{
+    console.log("not present");
+}
+
+
+
+//cloning the object
+const object2_name=
+{
+    radius2:2,
+    draw()
+    {
+        console.log("draw");
+    }
+}
+ const cloned={};
+ for(let key in object2_name)
+ {
+    cloned[key]=object2_name[key];
+ }
+ cloned['new_prop']="hello";
+
+ // cloning object by an another way
+ const object3_nmae=
+ {
+    radius3:2,
+    draw()
+    {
+        console.log("draw");
+    }
+    
+ };
+ const cloned2= Object.assign({},object2_name,object3_nmae);
+
+ //spread operator
+ const object_new=
+ {
+    radius_:2,
+    draw()
+    {
+        console.log("draw");
+    }
+ };
+ const another={...object_new};
+
+
+
+ //everything is an object
+const message_='hi';
+console.log(typeof message_);
+const another_message_= new Object('hi');
+console.log(typeof another_message_);
+
+
+// string using ``
+const message_new_using_templateliterals=`hi
+${1+2+3} is my message or string using template literals`;
+console.log(message_new_using_templateliterals);
+
+
+// address object
+const address=
+{
+    street:183,
+    city:`ludhiana`,
+    zipcode:141013
+};
+showaddress(address);
+function showaddress(address)
+{
+
+    for(let show in address)
+    {
+        console.log(show,address[show]);
+    }
+}
+
+// address object using factory function
+function showaddress_usingfactory()
+{
+    return{
+
+    street:183,
+    city:`ludhiana`,
+    zipcode:141013
+    }
+   
+}
+const show_factory= showaddress_usingfactory();
+console.log(show_factory);
+
+//using constructor function
+function showaddress_usingconstructor()
+{
+   
+    this.street=183;
+    this.city=`ludhiana`;
+    this.zipcode=141013;
+    
+   
+}
+const show_constructor = new showaddress_usingconstructor();
+console.log(show_constructor);
+// checking equality
+
+const show_constructor2 = new showaddress_usingconstructor();
+
+areequal(show_constructor,show_constructor2);
+
+aresame(show_constructor,show_constructor2);
+
+function areequal(show_constructor,show_constructor2)
+{
+    console.log(show_constructor.street===show_constructor2.street && show_constructor.city===show_constructor2.city && show_constructor.zipcode===show_constructor2.zipcode);
+}
+
+function aresame(show_constructor,show_constructor2)
+{
+    console.log(show_constructor===show_constructor2);
+}
+
