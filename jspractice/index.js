@@ -238,6 +238,8 @@ function calculategrade(marks){
 }
 
 
+
+
 // stars
 let rows=5;
 showsharts(rows);
@@ -253,6 +255,10 @@ function showsharts(rows){
         
     }
 }
+
+
+
+
 // objects
 
 const obje={
@@ -271,6 +277,8 @@ obje.draw();
 
 
 
+
+
 //factory function
 function createcircle(){
     const create={
@@ -284,6 +292,9 @@ function createcircle(){
 let circle=createcircle();
 circle.draw();
 
+
+
+
 //constructor function
 function Circle(){
     this.radius=1;
@@ -294,6 +305,10 @@ function Circle(){
 const circe=new Circle();
 circe.dra();
 circe.constructor;
+
+
+
+
 
 //how js engine understand a function
 const circle_1 =new Function(` this.radius=1;
