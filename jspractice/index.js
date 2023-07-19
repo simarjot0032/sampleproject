@@ -502,3 +502,146 @@ function aresame(show_constructor,show_constructor2)
     console.log(show_constructor===show_constructor2);
 }
 
+// constructor function blog
+function post(){
+    this.title='title';
+    this.body='body';
+    this.author="author";
+    this.view=2;
+    this.comments=[];
+    this.islive=false;
+}
+const blog=new post();
+console.log(blog);
+
+
+//pricerange
+let pricerange=[
+    {
+     lable:'$',
+     tooltip:'inexpensive',
+     minper:1,
+     maxper:10
+},
+{
+     lable:'$$',
+     tooltip:'mordreat',
+     minper:10,
+     maxper:20
+},
+{
+     lable:'$$$',
+     tooltip:'expensive',
+     minper:20,
+     maxper:30 
+}
+
+];
+for (let key of pricerange){
+    console.log(key,pricerange[key]);
+}
+
+
+//Arrays
+
+// addition
+
+const array_=[2,3];
+//loging array
+console.log(array_);
+
+//to add at end
+array_.push(4,5);
+console.log(array_);
+
+//to add at end
+array_.unshift(1);
+console.log(array_);
+
+//to add at middle
+array_.splice(3,0,'hello');
+console.log(array_);
+
+//searching
+const array_search=[1,2,3,1,5];
+console.log(array_search.indexOf(1));
+console.log(array_search.indexOf(2));
+
+console.log(array_search.lastIndexOf(1))
+console.log(array_search.lastIndexOf('llalala'));
+
+console.log(array_search.indexOf(1) !== -1);
+console.log(array_search.includes(1));
+
+// searching of objects
+const array_searchusingobject=[
+{
+    id:1,year:1
+},
+{
+    id:2,year:2
+}
+];
+// console.log(array_searchusingobject.find(function(array_searchusingobject){
+//     return array_searchusingobject.id===2;
+// }));
+
+const search=array_searchusingobject.find(function(array_searchusingobject){
+    return array_searchusingobject.id===2;
+});
+console.log(search);
+
+// to search index of object in an array
+const search2=array_searchusingobject.findIndex(function(array_searchusingobject){
+    
+       return array_searchusingobject.id===2;
+    
+})
+console.log(search2);
+
+//using arrow function
+const searchusingarrow=array_searchusingobject.find(array_searchusingobject=>{
+    return array_searchusingobject.id===2;
+});
+console.log(searchusingarrow);
+
+
+//removing elemenys from array
+let arrayremove=[1,2,3,4,5,6,7];
+console.log(arrayremove);
+let arrayremoveanswer=arrayremove.pop();
+console.log(arrayremove);
+ arrayremoveanswer=arrayremove.push(7);
+console.log(arrayremove);
+
+
+//at begning
+
+let arrayremoveanswer2=arrayremove.shift();
+console.log(arrayremove);
+arrayremoveanswer2=arrayremove.unshift(1);
+console.log(arrayremove);
+
+console.log(arrayremove);
+
+
+//at middle
+
+const arrayremoveanswerr=arrayremove.splice(2,1);
+console.log(arrayremove);
+console.log(arrayremove.splice(2,1,3));
+
+
+
+
+
+
+//emptying an array
+let arrayempty=[1,2,3,4,5,6,7];
+arrayempty=[];
+arrayempty.length=0;
+arrayempty.splice(0,arrayempty.length);
+while(arrayempty.length>=0){
+    arrayempty.pop();
+}
+console.log('arrayempty'+arrayempty);
