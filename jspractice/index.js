@@ -645,3 +645,221 @@ while(arrayempty.length>=0){
     arrayempty.pop();
 }
 console.log('arrayempty'+arrayempty);
+
+
+// combining two arrays
+let array1=[1,2];
+let array2=['hello'];
+const arrayconcat=array1.concat(array2);
+console.log(arrayconcat);
+
+//spread operator 
+let array_spread=[1,2,3,4,5];
+let array_spread2=[1,2,3,4,5,6,7,8];
+const combined=[...array_spread,'this was 1st now 2nd' ,array_spread2];
+console.log(combined);
+const copy=[...combined];
+console.log(copy);
+
+//iterating an array
+let new_array=[1,2,3,4,5];
+new_array.forEach(new_array => console.log(new_array))
+
+
+
+//joining
+let string='this is an string for joining';
+const stringsplit=string.split(' ');
+console.log(stringsplit);
+const arrayjoined=stringsplit.join('-');
+console.log(arrayjoined);
+// let arrayjoined_=[1,2,3,4,5,6,7,8];
+// console.log(arrayjoined_.join(','));
+
+//sorting
+let anarray=[
+    {
+        id:1,
+        name:'No'
+    },
+    {
+        id:2,
+        name:'J'
+    }
+];
+const sorted=anarray.sort(function(a,b){
+    if(a.name<b.name) return-1;
+    if(a.name>b.name) return 1;
+    return 0;
+});
+console.log(sorted);
+
+// testing  element on the array
+let arraaytest=[1,2,3,4,5];
+let test=arraaytest.every(arraaytest => {return arraaytest>=0});
+console.log(test);
+arraaytest=[1,2,-3];
+test=arraaytest.every(arraaytest => {return arraaytest>=0});
+console.log(test);
+
+
+//mapping
+let newarray=[1,2,3,4,5,6,7,8,-9];
+let  filterd=newarray.filter(function (newarray){
+    return newarray>=0;
+});
+console.log(filterd);
+const mapped= filterd.map(function(filterd){
+    return{value:filterd};
+    // this.value=filterd; not to use as filted is not constructor
+});
+
+console.log(mapped);
+
+console.log(mapped);
+const obj={
+    hl:'h'
+};
+for(let key of Object.entries(obj)){
+    console.log(key);
+}
+
+
+
+
+//exercise
+let min=-1;
+let max=10;
+arrayfromrange(min,max)
+
+function arrayfromrange(min,max){
+    let array_op=[];
+    for(i=min;i<=max;i++){
+        array_op.push(i);
+    }
+    console.log(array_op);
+}
+
+
+//includes
+let array_includes=[1,2,3,4,5];
+let search_element=0;
+include_(array_includes,search_element)
+function include_(array_includes,search_element){
+    for(let key of array_includes){
+        if(key===search_element){
+            console.log("element is present");
+        }
+        else{
+            console.log("not");
+        }
+    }
+}
+
+
+// except
+let array_except=[1,2,3,4,5,6,7,8];
+let elment=1;
+// let last;
+except(elment,array_except);
+function except(elment,array_except){
+    for(let except=0;except<array_except.length;except++){
+        // while(elment in array_except){ dont use as it will result in infinite loop
+            for(let i=0;i<array_except.length;i++){
+                if(array_except[except]===elment){
+        let  last=array_except.lastIndexOf(elment);
+         array_except.splice(last,1);
+          except--;
+        }}
+    }
+    console.log(array_except);
+}
+// //option 2
+
+// let array_except=[1,2,3,4,5,6,7,8];
+// let elment=1;
+// let last;
+// except(elment,array_except);
+// function except(elment,array_except){
+//     for(let except=0;except<=array_except.length;except++){
+//         // while(elment in array_except){
+//          if(elment===array_except[except]){
+//         // array_except.splice(array_except.lastIndexOf(last),1);
+//         array_except.splice(except,1);
+//         }
+//     }
+//     console.log(array_except);
+// }
+
+
+
+
+//countoccurance
+let array_reduce=[12,3,4,5,6,7,8,12];
+let element_to_becountde=120;
+let count_=0;
+const count=array_reduce.reduce(function(accumulatoe,cv){
+    if(cv===element_to_becountde){
+        count_=count_+1;
+    }
+    return count_;
+},0);
+console.log(count_);
+// function countoccurance(array_reduce,element_to_becountde){}
+
+
+//movies
+let movies=[
+    {title:'a',year:2018,rating:4.5},
+    {title:'b',year:2018,rating:4.7},
+    {title:'c',year:2018,rating:3},
+    {title:'d',year:2017,rating:4.5}
+];
+let output;
+
+     output=movies.filter(function(movies){
+     return  movies.year===2018 && movies.rating>=4;  
+    });
+    output.sort((a, b) => a.rating - b.rating);
+    output.reverse();
+    console.log(output.map(m=>m.title));
+    console.log(output);
+
+// function
+//expression function
+let another_method=function(){
+    console.log("this is the another method for uding function");
+};
+another_method();
+
+//hosting
+let hosting=function(){
+    console.log("hosting");
+};
+hosting();
+
+//arguments
+let arguments_=function(a,b){
+    console.log('sum');
+};
+arguments_(1,2);
+let arguments_morre=function(){
+    console.log(arguments);
+    let total=0;
+    for(let value of arguments){
+    total=total+value;}
+    return total;
+};
+console.log(arguments_morre(1,2,3,4,5));
+
+//rest operator
+let rest=function(...argu){
+    console.log(argu);
+    let total_=0;
+    for(let valuess of argu){
+        total_=total_+valuess;
+    }
+    console.log(total_);
+    // return total_;
+};
+rest(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
