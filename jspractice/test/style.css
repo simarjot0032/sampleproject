@@ -1,0 +1,41 @@
+body{
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(9, 8, 8), rgb(122, 122, 122)
+    );
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.fav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 20px;
+    gap: 0.5rem;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+}
+.heading{
+    font-size: 2rem;
+    margin: 0.5rem;
+
+}
+.box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 70px;
+    background-color: azure;
+    color: black;
+}

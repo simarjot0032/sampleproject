@@ -863,3 +863,177 @@ let rest=function(...argu){
     // return total_;
 };
 rest(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
+
+//defualt parameters
+let ren=function(a=5)
+{
+    console.log(a);
+}
+ren();
+
+//setter
+let sett=function(fname,lname){
+   let  firstname=fname;
+    let lastname=lname;
+    return `${firstname} hi ${lastname}`;
+    // console.log(firstname+''+lastname);
+}
+console.log(sett('hello','worls'));
+let getset={
+    first_name :'john',
+    lastname:'smith',
+    get full(){
+        return `${getset.first_name} ${getset.lastname}`;
+    },
+    set full(name){
+        const parts=name.split(' ');
+        this.first_name=parts[0];
+        this.lastname=parts[1];
+
+    }
+};
+
+getset.full=`hello ji`;
+
+console.log(getset.full);
+
+
+
+      
+ // try catch
+ 
+ let throwa={
+     first_name :'john',
+     lastname:'smith',
+     get full(){
+         return `${throwa.first_name} ${throwa.lastname}`;
+     },
+     set full(name){
+        if(name === '' || typeof name !== 'string')
+        throw new Error('please enter a valid name by system we are taking anothe name');
+         const parts=name.split(' ');
+         this.first_name=parts[0];
+         this.lastname=parts[1];
+ 
+     }
+ };
+ try{
+throwa.full=`hh ff`;
+ }
+ 
+catch(e){
+    alert(e);
+}
+ console.log(throwa.full);
+ 
+ //this keyword
+let disc={
+    video:'abcdef',
+    tags:['1','2','3','4','5','6','7','8'],
+    show(){
+        this.tags.forEach(function(tag){
+        console.log(this.video,tag);
+    },this);
+}
+};
+disc.show();
+// another method
+let discs={
+    video:'abcdef',
+    tags:['1','2','3','4','5','6','7','8'],
+    show(){
+        this.tags.forEach(function(tag){
+        console.log(this.video,tag);
+    }.bind(this));
+}
+};
+disc.show();
+
+// another
+let discss={
+    video:'abcdef',
+    tags:['1','2','3','4','5','6','7','8'],
+    show(){
+        this.tags.forEach((tag)=>{
+        console.log(this.video,tag);
+    });
+}
+};
+disc.show();
+// old
+let disc_={
+    video:'abcdef',
+    tags:['1','2','3','4','5','6','7','8'],
+    show(){
+        const this_=this;
+        this.tags.forEach(function(tag){
+        console.log(this_.video,tag);
+    });
+}
+};
+disc.show();
+
+
+//exercise
+let check_array=0;
+let sum_function=function(...args){
+    
+    if(Array.isArray(args)&& args.length===1){
+        // args.forEach(function(args){
+            // check_array=check_array+1;
+             args=[...args[0]];
+            let sum_of=0;
+            for(a of args){
+                sum_of=a+sum_of;
+            }
+            console.log(sum_of);
+        }
+    
+    else{
+    let  sum_inside=0;
+    for(let loop of args){
+        sum_inside+=loop;    
+    }
+    console.log(sum_inside);
+}}
+// }
+sum_function([1,2,3,4]);
+
+
+//exercise 
+let area={
+    radius:40,
+    get area(){
+        // let pi=3.14;
+        let area =Math.PI* this.radius* this.radius;
+        console.log(area);
+    }
+    
+};
+area.area=40;
+area.area;
+
+//exercise
+try{
+let array=[1,1,3,4,5,6,7,8];
+let element_search=1;
+countocc(array,element_search);
+}
+ catch{
+    alert(eb)
+}
+
+function countocc(array,element_search){
+    if(Array.isArray(array)){
+        
+    let countvariable=0;
+    for(let indes of array){
+        if(indes===element_search){
+            countvariable++;
+        }
+        console.log(countvariable);
+    }}
+    else{
+        throw new error("not a valid array");
+    }
+}
