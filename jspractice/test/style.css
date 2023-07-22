@@ -1,9 +1,9 @@
+*{overflow: auto !important;}
 body{
     color: white;
     background-image: linear-gradient(to bottom, rgb(9, 8, 8), rgb(122, 122, 122)
     );
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 .container{
     display: flex;
@@ -25,17 +25,27 @@ body{
     background-color: transparent;
 }
 .heading{
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 0.5rem;
 
+}
+.div-hollywood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:0.5rem;
+    
 }
 .box{
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40rem;
-    height: 70px;
+    width: 80vw;
+    height: 85px;
+    
     background-color: azure;
     color: black;
+    font-size: 2rem;
 }
