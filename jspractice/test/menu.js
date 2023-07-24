@@ -7,13 +7,13 @@ if(reveal.classList.contains('reveal')){
 else{
     reveal.classList.add('reveal');
 }}
-show.addEventListener('click',reveall)
+show.addEventListener('click',reveall);
 // let show=document.querySelector('.click');
 // let reveal=document.querySelector('.reveal');
 // reveal.classList.remove('reveal');
 // function reveall(){
 // if(reveal.classList.contains('reveal')){
-//     reveal.classList.remove('reveal');
+//     reveal.classList.r emove('reveal');
 //     reveal.style.display='none';
 
 // }
