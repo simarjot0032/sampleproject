@@ -49,3 +49,25 @@ body{
     color: black;
     font-size: 2rem;
 }
+.content{
+    display: none;
+}
+.content.show{
+    display: block;
+}
+.bo{
+    margin: auto auto;
+}
+.show, .extra{
+    width: 80vw;
+    text-align: center;
+}
+.show{
+    padding: 2rem 1.5rem;
+    width: 10vw;
+    font-size: 1rem;
+}
+.content{
+    width: 80vw;
+    font-size: 2rem;
+}
