@@ -99,3 +99,37 @@ for(let iterator=0;iterator<new_box.length;iterator++){
 new_box[iterator].style.width='80vw';
 new_box[iterator].style.maxWidth='50rem';
 }
+
+
+// document.body.style.background='black';
+// if(confirm('go back to color?')){
+//     setTimeout(()=>document.body.style.background='',100);
+// }
+
+let count=document.getElementsByClassName('bo')[0];
+let element=document.createElement('p');
+console.log(element);
+function counting(){
+    // element.innerHTML='';
+    for(let i=0;i<=100;i++){
+
+        // alert(i);
+        // element.innerHTML=j++,'<br>';
+        // console.log(i,j);
+        element.innerHTML+=i+'<br>'
+    }
+}
+counting();
+count.append(element);
+
+let show=document.querySelector('.show');
+let content=document.querySelector('.content');
+function hover(){
+    if (content.classList.contains('show')){
+        content.classList.remove('show');
+    }
+    else{
+        content.classList.add('show');
+    }
+}
+show.addEventListener('click',hover)
