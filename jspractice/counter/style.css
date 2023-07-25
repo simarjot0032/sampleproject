@@ -5,7 +5,7 @@
     align-items: center;
 }
 .counter{
-    width: 220px;
+    width: max-content;
     height: max-content;
     background-color: rgb(27, 125, 223);
     border-radius: 20px;
