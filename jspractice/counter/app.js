@@ -20,7 +20,6 @@ else{
     audio = new Audio('mixkit-gate-latch-click-1924.wav');
 }}
 function increment(){
-    
     counter++;
     count.innerHTML=counter;
     navigator.vibrate(200);
