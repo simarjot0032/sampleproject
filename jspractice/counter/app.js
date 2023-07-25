@@ -50,5 +50,4 @@ function resett(){
 increse.addEventListener('click',increment);
 decrease.addEventListener('click',decrement);
 reset.addEventListener('click',resett);
-
 sound.addEventListener('click',mute);
