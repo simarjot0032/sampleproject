@@ -60,10 +60,10 @@ const quotes = [
     person: "Wayne Gretzky"
   }
 ];
-let q=document.querySelector('.quote-q')
+let qu=document.querySelector('.quote-q')
 let generator=document.querySelector('.generator');
 generator.addEventListener('click',function() {
     let rand=Math.floor(Math.random()*quotes.length);
-    q.innerText=quotes[rand].quote;
+    qu.innerText=quotes[rand].quote;
     document.querySelector('.person').innerText='-'+quotes[rand].person;
 });
