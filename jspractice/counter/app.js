@@ -22,7 +22,7 @@ else{
 function increment(){
     counter++;
     count.innerHTML=counter;
-    navigator.vibrate(200);
+   window.navigator.vibrate(200);
     audio.play();
 }
 function decrement(){
@@ -33,13 +33,13 @@ function decrement(){
             counter=0;
         }
         count.innerHTML=counter;
-        navigator.vibrate(200);
+        window.navigator.vibrate(200);
     
 }
 function resett(){
     counter=0;
     count.innerHTML=counter;
-    navigator.vibrate(200);
+   window.navigator.vibrate(200);
     audio.play();
 
 }
