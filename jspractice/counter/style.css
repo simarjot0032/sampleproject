@@ -5,9 +5,9 @@
     align-items: center;
 }
 .counter{
-    width: 220px;
+    width: max-content;
     height: max-content;
-    background-color: rgb(27, 125, 223);
+    background-color: rgb(28, 114, 201);
     border-radius: 20px;
     padding: 1rem;
     display: flex;
