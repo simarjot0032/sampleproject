@@ -18,6 +18,8 @@ function decrement(){
             counter=0;
         }
         count.innerHTML=counter;
+        navigator.vibrate(700)
+        
     
 }
 function resett(){
