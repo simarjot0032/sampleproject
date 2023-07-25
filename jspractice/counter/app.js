@@ -34,8 +34,6 @@ function decrement(){
         }
         count.innerHTML=counter;
         navigator.vibrate(200);
-        
-        
     
 }
 function resett(){
