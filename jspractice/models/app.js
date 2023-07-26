@@ -28,4 +28,4 @@ window.addEventListener('click',function(e){
     document.querySelector('.container').style.backgroundColor='';
 
     }
-})
+});
