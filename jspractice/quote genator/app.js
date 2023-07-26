@@ -56,14 +56,18 @@ const quotes = [
     person: "Barack Obama"
   },
   {
-    quote: `"You miss 100% of the shots you don't take."`,
+    quote: `You miss 100% of the shots you don't take.`,
     person: "Wayne Gretzky"
-  }
+
+
+  },
+ 
 ];
-let qu=document.querySelector('.quote-q')
-let generator=document.querySelector('.generator');
-generator.addEventListener('click',function() {
-    let rand=Math.floor(Math.random()*quotes.length);
-    qu.innerText=quotes[rand].quote;
-    document.querySelector('.person').innerText='-'+quotes[rand].person;
-});
+let qoutess=document.querySelector('.quote-q');
+let person=document.querySelector('.person');
+let button=document.querySelector('.generator');
+button.addEventListener('click',function(){
+  let random=Math.floor(Math.random()*quotes.length);
+  qoutess.innerText='"'+quotes[random].quote+' "';
+  person.innerText='- '+quotes[random].person;
+})

@@ -10,10 +10,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 99vh;
+    height: 100vh;
     flex-direction: column;
 }  
 .quote-heading{
+    margin-top: 1rem;
     font-size: 2rem;
     color: #163649;
 }
@@ -23,8 +24,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    width: 50vw;
+    height: fit-content;
+    width: 90vw;
+    height: 90%;
     padding: 2.5rem;
 }
 .quote{
@@ -32,23 +34,50 @@ body{
     /* width: 40vw; */
 }
 .quote-q{
+    margin: 50px auto auto auto;
     text-align: center;
-    font-size: 2.5rem;
+    font-size:2.5rem;
 }
 .generator{
     padding: 1rem;
     color: white;
     width: max-content;
-    font-size: 2rem;
-    margin-top: 5rem;
+    font-size: 1rem;
+    /* margin-top: 22rem; */
     cursor: pointer;
     font-weight: 700;
     background-color: transparent;
     border: 0;
+    position: relative;
+    top:82vh;
+    position: fixed;
 }
 .generator:hover{
     transition: linear 0.4s;
     box-shadow: 0 0 0px;
     border-bottom: 2px solid white;
     transform: scale(1.1);
+}
+.person{
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width:1024px) {
+    
+    .connt{
+        height:400px;
+        width: 55vw;
+    }
+    .generator{
+        /* margin-top: 15em; */
+       /* justify-self: baseline; */
+       /* position: fixed; */
+       font-size: 2.4rem;
+
+
+        position: absolute;
+        top:57vh;
+       /* position: fixed; */
+    }
+    
 }
