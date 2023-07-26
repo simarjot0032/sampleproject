@@ -14,7 +14,7 @@ else{
     // document.body.backgroundColor='rgba(0, 0, 0, 0.212)';
     document.querySelector('.container').style.backgroundColor='rgba(0,0,0,0.2)';
 }
-    // console.log(count);
+    
 });
 let cross=document.querySelector('.cross');
 cross.addEventListener('click',function(){
