@@ -10,10 +10,10 @@ let leadinghours=0;
 let times;
 function stopwatch(){
     mill++;
-    if(mill===99){
+    if(mill/1000===1){
         mill=0;
         seconds++;
-    
+    // seconds++;
     if(seconds===60){
         seconds=0;
         min++;
