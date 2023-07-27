@@ -1,5 +1,5 @@
 //variables
-let mill=0
+let mill=1;
 let seconds=0;
 let min=0;
 let leadingmill=0;
@@ -9,8 +9,8 @@ let leadingminutes=0;
 let leadinghours=0;
 let times;
 function stopwatch(){
-    mill++;
-    if(mill/1000===1){
+    mill=mill+10;
+    if(mill===1000){
         mill=0;
         seconds++;
     // seconds++;
@@ -75,7 +75,7 @@ let anyt=null;
 let start=document.querySelector('#start');
 
 start.addEventListener('click',function(){
-  anyt= window.setInterval(stopwatch,1);
+  anyt= window.setInterval(stopwatch,10);
     document.querySelector('#start').style.display='none';
 
 
