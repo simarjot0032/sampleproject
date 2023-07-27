@@ -1,3 +1,4 @@
+//variables
 let mill=0
 let seconds=0;
 let min=0;
