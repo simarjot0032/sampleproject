@@ -77,9 +77,6 @@ let start=document.querySelector('#start');
 start.addEventListener('click',function(){
   anyt= window.setInterval(stopwatch,10);
     document.querySelector('#start').style.display='none';
-
-
-
     document.querySelector('#st').style.display='block';
     // document.querySelector('.fa-play').classList.toggle('fa-pause');
 });
