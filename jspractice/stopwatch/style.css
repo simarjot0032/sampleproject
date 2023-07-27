@@ -55,5 +55,5 @@ body{
 }
 .ul::-webkit-scrollbar{
     background-color: transparent;
-    /* scrollbar-color: white; */
+    /* scrollbar-color: white; */not supported in chrome
 }
