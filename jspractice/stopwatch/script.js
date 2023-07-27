@@ -101,6 +101,11 @@ document.querySelector('#st').addEventListener('click',function(){
 });
 
 document.querySelector('#rese').addEventListener('click',function(){
+    document.querySelector('#st').style.display='none';
+    document.querySelector('#start').style.display='block';
+    // document.querySelector('#st').classList.remove('fa-pause');
+    // document.querySelector('#start').classList.add('fa-play');
+
     window.clearInterval(anyt);
     mill=0;
     seconds=0;
@@ -113,7 +118,7 @@ let lap=1;
 document.querySelector('#lap').addEventListener('click',function(){
     let i=lap++;
     let li=document.createElement('li');
-    li.innerHTML=times+`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; lap`+i;
+    li.innerHTML=times+`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  lap`+i;
     document.querySelector('.ul').append(li);
 
 })
