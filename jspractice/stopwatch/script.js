@@ -118,7 +118,7 @@ let lap=1;
 document.querySelector('#lap').addEventListener('click',function(){
     let i=lap++;
     let li=document.createElement('li');
-    li.innerHTML=times+`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  lap`+i;
+    li.innerHTML=times+`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   lap`+i;
     document.querySelector('.ul').append(li);
 
 })
