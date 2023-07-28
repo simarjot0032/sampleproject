@@ -30,6 +30,7 @@ body{
 .time{
     color:#d8d8d8;
     font-size:50px;
+    width: 19rem;
 }
 .start,.reset{
     background: none;
