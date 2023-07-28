@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height:100vh;
+    /* overflow-y:hidden  ; */
 }
 .timer{
     /* position: relative; */
@@ -21,6 +22,13 @@ body{
     padding: 0.5rem;
     width: 20rem;
     position: fixed;
+
+}
+.time{
+    /* position: fixed; */
+}
+#start,#st,#rese,#lap,#broom{
+    cursor: pointer;
 }
 .time{
     color:#d8d8d8;
@@ -39,10 +47,11 @@ body{
     text-align: left;
     height: 200px;
     align-self: start;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-top: 1px solid white;
     position: relative;
-    top:480px;
+    top:70vh;
+    position: fixed;
 }
 /* #lap{
     position: relative;
@@ -52,13 +61,40 @@ body{
     overflow: scroll;
     overflow-x: hidden;
     height: 150px;
+    /* list-style-type: disc; */
+
 }
 .ul::-webkit-scrollbar{
     background-color: transparent;
     /* scrollbar-color: white;not supported in chrome */
 }
+.list{
+    /* width: 90%; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* list-style-type:decimal ; */
+
+}
+
 .button{
     display: flex;
     gap:20px;
     align-items: center;
 }
+
+
+.space{
+    width: 80%;
+    /* display:block; */
+    /* align-self: flex-end;
+     */
+
+     /* text-align: end; */
+     /* flex-grow: 1; */
+     /* margin: auto auto; */
+     margin: 0;
+     display: inline-block;
+     /* margin-left: %; */
+    text-align: end;
+}
+
