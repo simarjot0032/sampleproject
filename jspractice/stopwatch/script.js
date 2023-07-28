@@ -127,7 +127,7 @@ document.querySelector('#broom').addEventListener('click',function(){
             // aa.removeChild(aa);
             // }
             li_.innerHTML='';
-            lap=0;
+            lap=1;
             
             
         });
