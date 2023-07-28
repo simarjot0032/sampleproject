@@ -88,17 +88,9 @@ document.querySelector('#st').addEventListener('click',function(){
    document.querySelector('#st').style.display='none';
    document.querySelector('#start').style.display='block';
    }
-//    if(document.querySelector('#st').classList.contains('fa-pause')){
-    // document.querySelector('#st').classList.remove('fa-pause');
-    // document.querySelector('#st').classList.add('fa-play');
-//     window.setInterval(stopwatch,1);
-//    }
-//    if(document.querySelector('#st').classList.)
-//    if()
-    // document.querySelector('.fa-pause').classList.toggle('fa-play');
-
+   
 });
-
+// lap button
 let lap=1;
 let li;
 document.querySelector('#lap').addEventListener('click',function(){
@@ -108,9 +100,7 @@ document.querySelector('#lap').addEventListener('click',function(){
     if(i<10){
         li.innerHTML="0"+i+` lap<p=div class="space">`+times+`</div>`;
     }else{
-        li.innerHTML=i+`  lap <div class="space">`+times+`</div>`;
-       
-        
+        li.innerHTML=i+`  lap <div class="space">`+times+`</div>`; 
     }
     document.querySelector('.ul').append(li);
     
@@ -131,6 +121,25 @@ document.querySelector('#broom').addEventListener('click',function(){
             
             
         });
+        document.querySelector('#rese').addEventListener('click',function(){
+            document.querySelector('#st').style.display='none';
+            document.querySelector('#start').style.display='block';
+            // document.querySelector('#st').classList.remove('fa-pause');
+            // document.querySelector('#start').classList.add('fa-play');
+        
+            window.clearInterval(anyt);
+            mill=0;
+            seconds=0;
+            min=0;
+            hour=0;
+            document.querySelector('.time').innerText="00:00:00:000";
+            
+            let li_=document.querySelector('.ul');
+            li_.innerHTML='';
+            lap=1;
+            times='00:00:00:000';
+            
+        });
         // document.querySelectorAll('.cross').addEventListener('click',function(){
             //     for(let i=0;i<=lap;i++){
                 //         document.querySelectorAll('.list')[i].innerHTML='';
@@ -144,21 +153,12 @@ document.querySelector('#broom').addEventListener('click',function(){
                         //     for(let i=0;i<document.querySelectorAll('.list');i++){
                             //     li[i]=li[i].innerHTML='';}
                             // })
+                            //    if(document.querySelector('#st').classList.contains('fa-pause')){
+                                // document.querySelector('#st').classList.remove('fa-pause');
+                                // document.querySelector('#st').classList.add('fa-play');
+                            //     window.setInterval(stopwatch,1);
+                            //    }
+                            //    if(document.querySelector('#st').classList.)
+                            //    if()
+                                // document.querySelector('.fa-pause').classList.toggle('fa-play');
                             // }
-document.querySelector('#rese').addEventListener('click',function(){
-    document.querySelector('#st').style.display='none';
-    document.querySelector('#start').style.display='block';
-    // document.querySelector('#st').classList.remove('fa-pause');
-    // document.querySelector('#start').classList.add('fa-play');
-
-    window.clearInterval(anyt);
-    mill=0;
-    seconds=0;
-    min=0;
-    hour=0;
-    document.querySelector('.time').innerText="00:00:00:00";
-    let li_=document.querySelector('.ul');
-    li_.innerHTML='';
-    lap=1;
-
-});
