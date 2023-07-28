@@ -24,7 +24,6 @@ body{
     position: fixed;
 
 }
-
 #start,#st,#rese,#lap,#broom{
     cursor: pointer;
 }
@@ -66,13 +65,13 @@ body{
     background-color: transparent;
     /* scrollbar-color: white;not supported in chrome */
 }
-.list{
+/* .list{
     /* width: 90%; */
     /* display: flex; */
     /* justify-content: space-between; */
     /* list-style-type:decimal ; */
 
-}
+/* } */ 
 
 .button{
     display: flex;
