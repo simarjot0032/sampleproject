@@ -132,12 +132,12 @@ document.querySelector('#broom').addEventListener('click',function(){
             seconds=0;
             min=0;
             hour=0;
-            document.querySelector('.time').innerText="00:00:00:000";
+            document.querySelector('.time').innerText="00:00:00:00";
             
             let li_=document.querySelector('.ul');
             li_.innerHTML='';
             lap=1;
-            times='00:00:00:000';
+            times='00:00:00:00';
             
         });
         // document.querySelectorAll('.cross').addEventListener('click',function(){
