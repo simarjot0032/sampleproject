@@ -60,7 +60,6 @@ body{
     overflow-x: hidden;
     height: 150px;
     /* list-style-type: disc; */
-
 }
 .ul::-webkit-scrollbar{
     background-color: transparent;
