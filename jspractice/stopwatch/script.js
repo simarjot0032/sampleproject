@@ -99,6 +99,52 @@ document.querySelector('#st').addEventListener('click',function(){
 
 });
 
+let lap=1;
+let li;
+document.querySelector('#lap').addEventListener('click',function(){
+    let i=lap++;
+    li=document.createElement('li');
+    li.classList.add('list');
+    if(i<10){
+        li.innerHTML="0"+i+` lap<p=div class="space">`+times+`</div>`;
+    }else{
+        li.innerHTML=i+`  lap <div class="space">`+times+`</div>`;
+       
+        
+    }
+    document.querySelector('.ul').append(li);
+    
+    
+});
+document.querySelector('#broom').addEventListener('click',function(){
+    let li_=document.querySelector('.ul');
+    //    let a= Array.from(li);
+    // for(let i=0;i<=li.length;i++){
+        
+        //    li_.remove(li);
+        // let aa=li_.parentElement.children;
+        // for(let i=0;i<=aa.length;i++){
+            // aa.removeChild(aa);
+            // }
+            li_.innerHTML='';
+            lap--;
+            
+            
+        });
+        // document.querySelectorAll('.cross').addEventListener('click',function(){
+            //     for(let i=0;i<=lap;i++){
+                //         document.querySelectorAll('.list')[i].innerHTML='';
+                
+                
+                //     }
+                // });
+                // for(let i=0;i<=document.querySelectorAll('.cross');i++){
+                    // console.log(i);
+                    // document.querySelector('.cross').addEventListener('click',function(){
+                        //     for(let i=0;i<document.querySelectorAll('.list');i++){
+                            //     li[i]=li[i].innerHTML='';}
+                            // })
+                            // }
 document.querySelector('#rese').addEventListener('click',function(){
     document.querySelector('#st').style.display='none';
     document.querySelector('#start').style.display='block';
@@ -111,51 +157,8 @@ document.querySelector('#rese').addEventListener('click',function(){
     min=0;
     hour=0;
     document.querySelector('.time').innerText="00:00:00:00";
-
-});
-let lap=1;
-let li;
-document.querySelector('#lap').addEventListener('click',function(){
-    let i=lap++;
-    li=document.createElement('li');
-    li.classList.add('list');
-    if(i<10){
-        li.innerHTML="0"+i+`&nbsp;&nbsp;lap &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp`+times;
-    }else{
-        li.innerHTML=i+`&nbsp;&nbsp;lap &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp`+times;
-
-
-    }
-    document.querySelector('.ul').append(li);
-
-    
-});
-document.querySelector('#broom').addEventListener('click',function(){
     let li_=document.querySelector('.ul');
-//    let a= Array.from(li);
-    // for(let i=0;i<=li.length;i++){
-    
-    //    li_.remove(li);
-    // let aa=li_.parentElement.children;
-    // for(let i=0;i<=aa.length;i++){
-    // aa.removeChild(aa);
-    // }
     li_.innerHTML='';
-    lap--;
-
+    lap=1;
 
 });
-// document.querySelectorAll('.cross').addEventListener('click',function(){
-//     for(let i=0;i<=lap;i++){
-//         document.querySelectorAll('.list')[i].innerHTML='';
-        
-        
-//     }
-// });
-// for(let i=0;i<=document.querySelectorAll('.cross');i++){
-    // console.log(i);
-    // document.querySelector('.cross').addEventListener('click',function(){
-    //     for(let i=0;i<document.querySelectorAll('.list');i++){
-    //     li[i]=li[i].innerHTML='';}
-    // })
-// }
