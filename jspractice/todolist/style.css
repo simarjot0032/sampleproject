@@ -276,7 +276,7 @@ gap: 5px;
 
 }
 .ul_in_todo{
-    width: 95%;
+    /* width: 90%; */
     padding: 0;
     display:flex;
     align-items: center;
@@ -297,9 +297,10 @@ gap: 5px;
     justify-content: space-between;
     /* flex-direction: column; */
     gap:10px;
-    width: 100%;
+    width: 99%;
 
 }
+
 
 /* .numberto{
     font-size: 1rem;
@@ -316,23 +317,38 @@ gap: 5px;
     align-self: flex-end;
     /* display: none; */
     margin-left:1rem ;
-    gap: 10px;
+    gap: 2px;
 }
-.extra{
+/* .extra{
     display:flex;
+    width: 100%;
+} */
+.tasks_usinglist{
+    /* width: fit-content; */
+    /* outline: 2px solid black; */
 }
 .taskss{
-    font-size: 2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 0.5rem;
     align-self: flex-end;
     align-self: flex-end;
+    flex-grow:4 ;
+    width:70%;
     /* flex-wrap: wrap; */
     word-wrap:break-word;  
+    white-space: wrap;
     text-overflow: ellipsis;
-   flex-grow: 4;
-   background-color: transparent;
+   /* background-color: transparent; */
    border: 0;
-   outline: 0;
+   /* outline: 4px solid black; */
+   background-color: rgba(207, 207, 207, 0.705);
+   /* max-width: auto; */
+   border-radius:20px ;
 
+
+}
+.taskss:focus{
+    outline: 0;
 }
 .addbtn,.clear,#editbtn,#edit2{
     cursor: pointer;
@@ -354,6 +370,7 @@ border: 0;
 cursor: pointer;
 font-weight: 700;
 }
+
 
 @media screen and (min-width:1024px) {
    
