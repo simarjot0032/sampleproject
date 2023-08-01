@@ -1,0 +1,92 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0; 
+    background:rgba(27, 218, 224, 0.507) ;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0  5px 4px rgb(148, 148, 148);
+    background-color: white;
+
+}
+.leftnav{
+    margin-left:2vw ;
+    width: 50%;
+    text-align: center;
+}
+.heading{
+    color: #17bed2;
+    font-size: 2.5rem;
+    margin: 0;
+    padding-top:0.4rem ;
+}
+.right{
+    margin-right:2vw ;
+    /* margin-left:4vw ; */
+
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ul{
+    display: flex;
+    gap: 20px;
+}
+.listitem{
+    /* display: inline-block; */
+    color: black;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    transition: all 0.1s ease;
+    font-weight:550 ;
+}
+a:hover{
+    color: #17bed2;
+    border-bottom:1px solid #17bed2 ;
+}
+.parent{
+    height:  80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bacha{
+    display: flex;
+    flex-direction: column;
+}
+.backh{
+font-weight: 700;
+color:  #17bed2;
+border-radius: 10px;
+padding: 1rem 0.7rem;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.829);
+
+}
+.click{
+    background-color: transparent;
+    border: 2PX solid black;
+    color: black;
+    font-weight: 700;
+    padding: 1rem 0.7rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: center;
+    
+}
+.click:hover{
+    background-color: black;
+    color: white;
+}
