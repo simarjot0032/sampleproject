@@ -5,6 +5,7 @@ body{
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     position: relative;
     position: sticky;
