@@ -55,7 +55,6 @@ if(count<0){
     number.style.color='red';
 
 }
-
     navigator.vibrate(100);
 
 });
