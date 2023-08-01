@@ -32,7 +32,7 @@ margin-top:1rem ;
 }
 .d,.r,.i{
 outline: 0;
-    padding:1rem 1.5rem;
+    padding:1rem 0.5rem;
     background-color: transparent;
     font-weight: 700;
     transition: all 0.2s linear;
