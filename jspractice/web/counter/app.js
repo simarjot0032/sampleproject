@@ -46,7 +46,6 @@ decrease.addEventListener('click',function(){
 
 if(count===0){
     number.style.color='black';
-
 }
 if(count>0){
     number.style.color='green';
