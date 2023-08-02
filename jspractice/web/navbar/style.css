@@ -4,47 +4,125 @@ body{
     margin: 0;
 
 }
+.mobileview{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
 .navbar{
     
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    align-items:space-around;
+    align-items: start;
     box-shadow: 0 0 10px 2px rgb(173, 173, 173);
+    flex-direction: column;
+    line-height: 2rem;
+    padding-left:0.7rem ;
+    transition: all 0.7s linear;
+  
+
+
+}
+.menu{
+    justify-self: center;
+    align-self: center;
 }
 .headings{
     display: flex;
     gap: 20px;
 }
 .heading-1{
-    filter: drop-shadow( 0 2px 2px 2px black);
+    /* filter: drop-shadow(1 2 2 2 black); */
+    text-shadow: 2px 2px rgb(143, 143, 143);
+    font-weight: 500;
+
 }
 .heading{
-    color:rgba(15, 173, 247, 0.829);
+    color:rgba(51, 190, 255, 0.829);
+    font-weight: 500;
+
+    text-shadow: 2px 2px rgb(194, 193, 193);
+
 }
 .links{
-    justify-self: center;
+  
+
+    justify-self: start;
+    transition: all 0.5s ease-in-out;
+
 }
 .ul{
 
-    display: flex;
+    display: none;
+    padding: 0;
+    max-height: 0;
+    transition: all 0.7s ease-in-out;
+
+    
 }
 .listitem{
     list-style: none;
     margin: 0 0.5rem 0 0.5rem;
+    transition: all 0.2s ease-in-out;
+
 }
 a{
+    
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
     letter-spacing: 5px;
 
 }
 .logos{
-    display: flex;
-    gap: 10px;
+    display: none;
+    gap: 15px;
 }
 .fab{
     color:rgba(19, 134, 187, 0.829);
 
     /* color: ;
      */
+}
+.ul.active{
+    display: block;
+    /* transition: all 0.7s ease-in-out; */
+    max-height: 150px;
+
+}
+.menu{
+    transition: all 0.2s linear;
+}
+
+@media screen and (min-width:800px) {
+    .logos{
+        display: flex;
+    }
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .ul.active{
+        display: flex;
+        flex-direction: row;
+    }
+    .links{
+        width: fit-content;
+        align-items: center;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .mobileview{
+        justify-content: start;
+        width: fit-content;
+        
+        
+    }
 }
