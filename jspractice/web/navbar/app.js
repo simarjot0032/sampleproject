@@ -6,16 +6,8 @@ menu.addEventListener('click',function(){
     if(ul.classList.contains('active')){
     menu.style.transform='rotate(90deg)';
     menu.style.transition='all 0.2s linear';
-    // document.querySelector('.navbar').style.transition='all 0.4s linear'
-
-    // ul.style.transition='all 0.2s linear';
-    
     }
     else{
     menu.style.transform='';
-    // ul.style.transition='';
-   
-    // document.querySelector('.navbar').style.transition=''
-
     }
 })

@@ -80,9 +80,6 @@ a{
 }
 .fab{
     color:rgba(19, 134, 187, 0.829);
-
-    /* color: ;
-     */
 }
 .ul.active{
     display: block;
@@ -106,6 +103,7 @@ a{
     .ul{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     .ul.active{
         display: flex;
@@ -115,6 +113,7 @@ a{
         width: fit-content;
         align-items: center;
     }
+    
     .menu{
         display: none;
     }
