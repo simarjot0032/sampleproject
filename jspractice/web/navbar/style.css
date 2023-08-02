@@ -106,6 +106,7 @@ a{
     .ul{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     .ul.active{
         display: flex;
@@ -114,6 +115,9 @@ a{
     .links{
         width: fit-content;
         align-items: center;
+    }
+    .ul{
+        align-self: center;
     }
     .menu{
         display: none;
