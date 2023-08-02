@@ -116,9 +116,7 @@ a{
         width: fit-content;
         align-items: center;
     }
-    .ul{
-        align-self: center;
-    }
+    
     .menu{
         display: none;
     }
