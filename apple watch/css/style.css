@@ -303,6 +303,7 @@ background: rgba(249, 205, 196, 0.60);
 @media screen and (min-width:768px) {
     .apple{
        margin-left: 5vw;
+       justify-content: space-between;
     }
     body{
         margin: auto auto;
@@ -321,7 +322,7 @@ background: rgba(249, 205, 196, 0.60);
     .nav{
        /* visibility: visible; */
        display: inline;
-       gap: 5rem;
+       gap: 2rem;
         color:white;
     }
     .un{
@@ -334,7 +335,7 @@ background: rgba(249, 205, 196, 0.60);
         flex-grow: 1.5;
         list-style-type: none;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         
     
     }
@@ -460,6 +461,16 @@ background: rgba(249, 205, 196, 0.60);
         /* width: 90vw;
          */
          margin:auto auto;
+    }
+    .apple{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .un{
+        gap: 0;
+    }
+    .empty{
+        flex-grow: 0;
     }
     .main-heading{
         max-width: 750px;
