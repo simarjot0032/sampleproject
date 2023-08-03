@@ -297,10 +297,6 @@ aside{
         flex-grow: 1;
        }
    
-       body::-webkit-scrollbar{
-        /* /* background-color:#C8DCE5; */
-        background: linear-gradient(315deg, #C8DCE5 0%, #B6CCDA 100%);
-       }
 .nav2{
     /* display: none; */
     
