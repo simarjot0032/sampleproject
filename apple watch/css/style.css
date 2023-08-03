@@ -352,6 +352,12 @@ color: black;
 
     /*  properties for tablet */
 @media screen and (min-width:768px) and (max-width:1024px){
+    .nav2.show{
+        display: none;
+        transform: translate(0%);
+        transition: 0.4s linear;
+    
+    }
     .apple{
         width: 85vw;
        justify-content: space-between;
@@ -503,6 +509,12 @@ aside{
 /* properties for laptop */
 
 @media screen and (min-width:1025px) and (max-width:1349px){
+    .nav2.show{
+        display: none;
+        transform: translate(0%);
+        transition: 0.4s linear;
+    
+    }
     body{
         /* width: 90vw;
          */
@@ -637,6 +649,12 @@ aside{
 
 /* properties for laptop  */
 @media screen and (min-width:1350px) {
+    .nav2.show{
+        display: none;
+        transform: translate(0%);
+        transition: 0.4s linear;
+    
+    }
     /* .apple{
         margin: 1rem 2rem 0 2rem;
     } */
@@ -752,6 +770,12 @@ flex-shrink: 0;
 
 @media screen and (min-width:1500px) {
     .container{
+        .nav2.show{
+            display: none;
+            transform: translate(0%);
+            transition: 0.4s linear;
+        
+        }
        position: relative;
        top: 2rem;
         grid-template-columns: 50% 50%;
