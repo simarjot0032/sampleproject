@@ -638,7 +638,7 @@ aside{
  aside{
     position: absolute;
     width: 50px;
-    height: 48.5rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     top:0
@@ -671,6 +671,9 @@ aside{
         margin-left:2vw ;
         justify-content: space-between;
         gap: 0;
+    }
+    .full{
+        height: 100vh;
     }
     .nav{
         display: flex;
@@ -786,7 +789,7 @@ flex-shrink: 0;
         gap: 10rem;
     }
     .full{
-        height: 105vh;
+        height: 100vh;
     }
     .listitems{
         font-size: 1.5rem;
@@ -843,6 +846,6 @@ flex-shrink: 0;
         top: 85px;
     }
    aside{
-    height: 105vh;
+    height: 100vh;
    }
 }
