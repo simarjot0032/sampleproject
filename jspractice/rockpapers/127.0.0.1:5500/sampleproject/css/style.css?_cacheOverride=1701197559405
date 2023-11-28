@@ -931,7 +931,7 @@ i {
   }
   .landing2 {
     margin-top: 1rem;
-    margin-left: 4vw;
+    /* margin-left: 4vw; */
     width: 90vw;
     grid-template-columns: 52% 48%;
     grid-template-rows: 50% 15% 20%;
@@ -1040,6 +1040,7 @@ i {
     flex-direction: column;
   }
   .supereasy {
+    /* margin-left: 19vw; */
     margin-top: 1rem;
   }
   .easy-img {
@@ -1061,7 +1062,7 @@ i {
   .feature3 {
     margin: auto auto;
     display: grid;
-
+    /* margin-left: 18vw; */
     margin-top: 2rem;
     grid-template-columns: 40% 40%;
     grid-template-rows: 10% 22% 50%;
@@ -1132,9 +1133,6 @@ i {
 /* code for wider view with minium pixel of 1350px with reponsiveness for all devices */
 
 @media screen and (min-width: 1350px) {
-  .bluebox {
-    max-width: fit-content;
-  }
   .landing {
     height: 80vh;
     margin: 0 auto;
@@ -1246,37 +1244,24 @@ i {
     width: 90px;
     height: 20px;
   }
-  .cards {
-    /* width: 1500px; */
-    /* margin: 0 auto; */
-    margin-top: 4rem;
-  }
   .card {
     margin: auto auto;
-    max-width: 350px;
+    max-width: 400px;
     display: grid;
     gap: 20px;
   }
-
-  .super-easypara {
-    width: 420px;
+  .cards {
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 4rem;
   }
+
   .supereasy {
     /* margin-left: 33vw; */
-    display: grid;
-    grid-template-columns: 60% 50%;
-    margin: 0;
-    width: fit-content;
   }
-  .easy-img {
-    margin: 0%;
-  }
-  .feature-heading,
-  .super-easypara {
-    grid-column: 1;
-  }
-
   .feature2 {
+    /* margin: auto auto; */
+    /* margin-left: 32vw; */
     grid-template-columns: 49% 50%;
   }
   .feature2-heading,
@@ -1315,7 +1300,6 @@ i {
     margin-top: 4rem;
   }
   .control-pannel {
-    box-sizing: border-box;
     width: 100vw;
   }
 

@@ -1132,9 +1132,6 @@ i {
 /* code for wider view with minium pixel of 1350px with reponsiveness for all devices */
 
 @media screen and (min-width: 1350px) {
-  .bluebox {
-    max-width: fit-content;
-  }
   .landing {
     height: 80vh;
     margin: 0 auto;
@@ -1258,13 +1255,10 @@ i {
     gap: 20px;
   }
 
-  .super-easypara {
-    width: 420px;
-  }
   .supereasy {
     /* margin-left: 33vw; */
     display: grid;
-    grid-template-columns: 60% 50%;
+    /* grid-template-columns: 60% 50%; */
     margin: 0;
     width: fit-content;
   }
@@ -1275,7 +1269,6 @@ i {
   .super-easypara {
     grid-column: 1;
   }
-
   .feature2 {
     grid-template-columns: 49% 50%;
   }
